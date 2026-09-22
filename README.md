@@ -1,4 +1,3 @@
-cat > ~/nyc-taxi-analytics/README.md << 'EOF'
 # NYC Yellow Taxi SQL Analytics
 
 > Advanced SQL analysis of NYC Yellow Taxi trip data. Answers 8 business questions using window functions, CTEs, conditional aggregation, and statistical outlier detection.
