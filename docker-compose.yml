@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:15
+    container_name: nyc_taxi_postgres
+    environment:
+      POSTGRES_USER: taxi_user
+      POSTGRES_PASSWORD: taxi_pass
+      POSTGRES_DB: taxi
+    ports:
+      - "6544:5432"
+    volumes:
+      - taxi_data:/var/lib/postgresql/data
+
+volumes:
+  taxi_data:
